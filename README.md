@@ -20,15 +20,14 @@ The code is written and organized in **VS Code**.
 - VS Code  
 - Figma (for design reference)  
 
----
+
 
 ## 📸 Screenshots
 
 ### Homepage
-SCREEN.png
 
+![Homepage Screenshot](screenshots/SCREEN.png)
 
-*(Replace `screenshots/homepage.png` with your actual screenshot path)*
 
 ---
 
