@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehan Raihan - Freelance Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <button class="logo" onclick="scrollToSection('home')">
+                <img src="/logo.svg" alt="Logo">
+            </button>
+            <div class="nav-links">
+                <button class="nav-link active" data-section="home" onclick="scrollToSection('home')">Home</button>
+                <button class="nav-link" data-section="expertise" onclick="scrollToSection('expertise')">About</button>
+                <button class="nav-link" data-section="portfolio" onclick="scrollToSection('portfolio')">Projects</button>
+                <button class="nav-link" data-section="contact" onclick="scrollToSection('contact')">Contact</button>
+            </div>
+            <button class="hire-btn" onclick="scrollToSection('contact')">HIRE ME</button>
+            <button class="nav-toggle" aria-label="Open menu" onclick="toggleMobileNav()">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="8" y1="12" x2="24" y2="12" />
+                    <line x1="8" y1="20" x2="24" y2="20" />
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <button class="mobile-nav-close" aria-label="Close menu" onclick="toggleMobileNav()">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="8" y1="8" x2="24" y2="24" />
+                    <line x1="24" y1="8" x2="8" y2="24" />
+                </svg>
+            </button>
+            <div class="mobile-nav-links">
+                <button class="mobile-nav-link" onclick="scrollToSection('home');toggleMobileNav()">Home</button>
+                <button class="mobile-nav-link" onclick="scrollToSection('expertise');toggleMobileNav()">About</button>
+                <button class="mobile-nav-link" onclick="scrollToSection('portfolio');toggleMobileNav()">Projects</button>
+                <button class="mobile-nav-link" onclick="scrollToSection('contact');toggleMobileNav()">Contact</button>
+                <button class="mobile-hire-btn" onclick="scrollToSection('contact');toggleMobileNav()">HIRE ME</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <header class="hero-header">
+                <h1 class="hero-title">
+                    <span class="title-word">
+                        I AM A
+                        <img src="/rectangle.svg" alt="" class="title-decoration">
+                    </span>
+                    <span class="title-word">FREELANCE</span>
+                    <span class="title-word">
+                        DESIGNER
+                        <img src="/rectangle-1.svg" alt="" class="title-decoration">
+                    </span>
+                    <span class="title-word">FROM</span>
+                    <span class="title-word">BANGLADESH</span>
+                </h1>
+            </header>
+            
+            <div class="hero-content">
+                <img src="/frame-5.svg" alt="Designer illustration" class="hero-image">
+                <p class="hero-description">
+                    Welcome to my portfolio. Here, artistry meets functionality. Dive
+                    into a curated showcase of distinctive branding and web designs,
+                    each crafted to captivate and inspire.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise-section">
+        <div class="section-container">
+            <header class="section-header">
+                <img src="/star-7.svg" alt="Star" class="section-icon">
+                <h2 class="section-title">Expertise</h2>
+            </header>
+            
+            <div class="expertise-grid">
+                <article class="expertise-item">
+                    <div class="expertise-header">
+                        <img src="/frame-3.svg" alt="" class="expertise-icon">
+                        <h3 class="expertise-title">Branding</h3>
+                    </div>
+                    <p class="expertise-description">
+                        I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.
+                    </p>
+                </article>
+                
+                <article class="expertise-item">
+                    <div class="expertise-header">
+                        <img src="/frame-3.svg" alt="" class="expertise-icon">
+                        <h3 class="expertise-title">UI Design</h3>
+                    </div>
+                    <p class="expertise-description">
+                        I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.
+                    </p>
+                </article>
+                
+                <article class="expertise-item">
+                    <div class="expertise-header">
+                        <img src="/frame-2.svg" alt="" class="expertise-icon">
+                        <h3 class="expertise-title">UX Design</h3>
+                    </div>
+                    <p class="expertise-description">
+                        I comprehend and resolve digital product issues using a user-focused methodology. Investigation. compassion, and visual conveyance are a few techniques I apply to captivate and involve your users while fulfilling your business requirements
+                    </p>
+                </article>
+                
+                <article class="expertise-item">
+                    <div class="expertise-header">
+                        <img src="/frame-3.svg" alt="" class="expertise-icon">
+                        <h3 class="expertise-title">Development</h3>
+                    </div>
+                    <p class="expertise-description">
+                        I create user-friendly, adaptive, engaging websites. No cookie-cutters. No cumbersome. complex coding. Webflow forms the foundation of my web development approach, I employ it to produce safe, top-notch personalized websites.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="section-container">
+            <header class="section-header-with-link">
+                <div class="section-header">
+                    <img src="/star.svg" alt="Star" class="section-icon">
+                    <h2 class="section-title">Works</h2>
+                </div>
+                <button class="view-all-btn" onclick="viewAllProjects()">view all</button>
+            </header>
+            
+            <div class="portfolio-items">
+                <article class="portfolio-item" data-project="1">
+                    <div class="portfolio-glow"></div>
+                    <img src="/image-21-2.png" alt="Analysis Application" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Analysis Application</h3>
+                        <p class="portfolio-description">
+                            With user-centered approach, the goals was to create an intuitive interface for enhanced financial intelligence.
+                        </p>
+                        <div class="portfolio-tags">
+                            <a href="#" class="tag">FIGMA</a>
+                           <a href="#" class="tag">ux</a>
+                        </div>
+                        <button class="case-study-btn" onclick="viewCaseStudy(1)">View Case Study</button>
+                    </div>
+                </article>
+                
+                <article class="portfolio-item" data-project="2">
+                    <div class="portfolio-glow"></div>
+                    <img src="/image-21-3.png" alt="Fortknox Application" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Fortknox Application</h3>
+                        <p class="portfolio-description">
+                            With user-centered approach, the goals was to create an intuitive interface for enhanced financial intelligence.
+                        </p>
+                        <div class="portfolio-tags">
+                            <span class="tag">MOBILE</span>
+                            <span class="tag">WEB</span>
+                        </div>
+                        <button class="case-study-btn" onclick="viewCaseStudy(2)">View Case Study</button>
+                    </div>
+                </article>
+                
+                <article class="portfolio-item" data-project="3">
+                    <div class="portfolio-glow"></div>
+                    <img src="/image-21-4.png" alt="Zenocide Application" class="portfolio-image">
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Zenocide Application</h3>
+                        <p class="portfolio-description">
+                            With user-centered approach, the goals was to create an intuitive interface for enhanced financial intelligence.
+                        </p>
+                        <div class="portfolio-tags">
+                            <span class="tag">APP</span>
+                            <span class="tag">WEB</span>
+                        </div>
+                        <button class="case-study-btn" onclick="viewCaseStudy(3)">View Case Study</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="section-container">
+            <header class="section-header">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                <h2 class="section-title">Experience</h2>
+            </header>
+            
+            <div class="experience-items">
+                <div class="experience-item">
+                    <h3 class="experience-title">Lead Product Designer</h3>
+                    <div class="experience-details">
+                        <div class="experience-company">Fortknox</div>
+                        <div class="experience-period">Mar 2022 - Oct 2023</div>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <h3 class="experience-title">Intern Designer</h3>
+                    <div class="experience-details">
+                        <div class="experience-company">OmniSafe</div>
+                        <div class="experience-period">Mar 2022 - Oct 2023</div>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <h3 class="experience-title">UI Designer</h3>
+                    <div class="experience-details">
+                        <div class="experience-company">Doradesign</div>
+                        <div class="experience-period">Mar 2022 - Oct 2023</div>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <h3 class="experience-title">Frontend Developer</h3>
+                    <div class="experience-details">
+                        <div class="experience-company">OpacityAuthor</div>
+                        <div class="experience-period">Mar 2022 - Oct 2023</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="section-container">
+            <header class="section-header-with-link">
+                <div class="section-header">
+                    <img src="/star.svg" alt="Star" class="section-icon">
+                    <h2 class="section-title">Blog</h2>
+                </div>
+                <button class="view-all-btn" onclick="viewAllPosts()">view all</button>
+            </header>
+            
+            <div class="blog-items">
+                <article class="blog-item">
+                    <img src="/image-21-2.png" alt="Blog post" class="blog-image">
+                    <div class="blog-content">
+                        <time class="blog-date">Nov 9, 2023</time>
+                        <h3 class="blog-title">How UX works in web</h3>
+                        <div class="blog-tags">
+                            <span class="tag">UI</span>
+                            <span class="tag">UX</span>
+                        </div>
+                    </div>
+                    <button class="read-btn" onclick="readPost(1)">Read</button>
+                </article>
+                
+                <article class="blog-item">
+                    <img src="/image-21-3.png" alt="Blog post" class="blog-image">
+                    <div class="blog-content">
+                        <time class="blog-date">Aug 18, 2023</time>
+                        <h3 class="blog-title">Case study - Analysis Application.</h3>
+                        <div class="blog-tags">
+                            <span class="tag">DESIGN</span>
+                            <span class="tag">PRINT</span>
+                        </div>
+                    </div>
+                    <button class="read-btn" onclick="readPost(2)">Read</button>
+                </article>
+                
+                <article class="blog-item">
+                    <img src="/image-21-4.png" alt="Blog post" class="blog-image">
+                    <div class="blog-content">
+                        <time class="blog-date">Feb 16, 2023</time>
+                        <h3 class="blog-title">3 ways to develop your skill</h3>
+                        <div class="blog-tags">
+                            <span class="tag">FIGMA</span>
+                            <span class="tag">WEB</span>
+                        </div>
+                    </div>
+                    <button class="read-btn" onclick="readPost(3)">Read</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-container">
+            <header class="section-header">
+                <img src="/star.svg" alt="Star" class="section-icon">
+                <h2 class="section-title">What they say</h2>
+            </header>
+            
+            <div class="testimonial-container">
+                <button class="testimonial-nav prev" onclick="prevTestimonial()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                
+                <div class="testimonial-content">
+                    <div class="testimonial-author">
+                        <img src="/frame.png" alt="Author" class="author-avatar" id="testimonial-avatar">
+                        <div class="author-info">
+                            <h3 class="author-name" id="testimonial-name">Floyd Miles</h3>
+                            <p class="author-company" id="testimonial-company">eBay</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-quote">
+                        <img src="/quote.svg" alt="Quote" class="quote-icon">
+                        <blockquote id="testimonial-text">
+                            Synergy's resume builder is fantastic. It helped me create a professional resume that stood out to employers. The design templates are modern and the interface is intuitive.
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <button class="testimonial-nav next" onclick="nextTestimonial()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="testimonial-dots" id="testimonial-dots"></div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="section-container">
+            <header class="section-header">
+                <img src="/star.svg" alt="Star" class="section-icon">
+                <h2 class="section-title">Frequently asked questions</h2>
+            </header>
+            
+            <div class="faq-items">
+                <div class="faq-item active">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What is your design process?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>My design process typically involves four key phases: research, design, prototype, and test. In the research phase, I gather insights about the user and their needs. In the design phase, I create wireframes and visual designs that meet those needs. In the prototype phase, I create interactive models of the design for testing. In the test phase, I collect feedback from users to refine the design.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What tools and software do you use for UX design?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I use a variety of industry-standard tools including Figma for design and prototyping, Adobe Creative Suite for graphics, Webflow for development, and various user research tools like Hotjar and Google Analytics for insights.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do you measure the success of your UX designs?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Success is measured through various metrics including user engagement rates, conversion improvements, task completion rates, user satisfaction scores, and business KPIs. I also conduct usability testing and gather qualitative feedback to ensure the design meets user needs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What is your typical project timeline?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on scope and complexity. A typical website redesign takes 4-8 weeks, while a complete brand identity project might take 6-12 weeks. I always provide detailed timelines during the initial consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you work with international clients?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, I work with clients globally. I'm experienced in remote collaboration and use various communication tools to ensure smooth project delivery regardless of time zones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer-section">
+        <div class="footer-container">
+            <div class="footer-header">
+                <div class="footer-text">WEBFLOW</div>
+                <img src="/star.svg" alt="Star" class="footer-star">
+                <div class="footer-text">FIGMA</div>
+                <img src="/star-7.svg" alt="Star" class="footer-star">
+                <div class="footer-text">DESIGNER</div>
+                <img src="/star.svg" alt="Star" class="footer-star">
+                <div class="footer-text">DEVELOPER</div>
+                <img src="/star.svg" alt="Star" class="footer-star">
+            </div>
+            
+            <div class="footer-content">
+                <h2 class="footer-title">LET'S TALK!</h2>
+                <button class="footer-email" onclick="sendEmail()">
+                    <span>rehanurraihan@gmail.com</span>
+                    <img src="/frame-1.svg" alt="Arrow">
+                </button>
+                
+                <div class="footer-bottom">
+                    <div class="footer-copyright">© Rehan Raihan - 2023</div>
+                    <div class="footer-social">
+                        <button onclick="openSocial('https://dribbble.com')">Dribbble</button>
+                        <button onclick="openSocial('https://behance.net')">Behance</button>
+                        <button onclick="openSocial('https://twitter.com')">Twitter</button>
+                        <button onclick="openSocial('https://instagram.com')">Instagram</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" onclick="scrollToTop()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18,15 12,9 6,15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
