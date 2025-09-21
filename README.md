@@ -25,7 +25,8 @@ The code is written and organized in **VS Code**.
 ## 📸 Screenshots
 
 ### Homepage
-![Homepage Screenshot](screenshots/homepage.png)
+SCREEN.png
+
 
 *(Replace `screenshots/homepage.png` with your actual screenshot path)*
 
