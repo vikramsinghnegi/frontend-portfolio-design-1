@@ -32,7 +32,7 @@ The code is written and organized in **VS Code**.
 ---
 
 ## 🎨 Figma Design
-Original design reference: [Figma Link](https://www.figma.com/your-figma-link)
+Original design reference:https://www.figma.com/community/file/1323362736118755647
 
 ---
 
@@ -44,4 +44,3 @@ Original design reference: [Figma Link](https://www.figma.com/your-figma-link)
 
 ---
 
-## 📂 Project Structure
